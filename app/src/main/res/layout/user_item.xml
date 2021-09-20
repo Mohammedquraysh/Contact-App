@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp">
+
+
+        <TextView
+            android:id="@+id/fName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="First Name:"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="56dp"
+            app:layout_constraintStart_toStartOf="@+id/const_layout"
+
+            app:layout_constraintTop_toTopOf="@id/const_layout"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Last Name:"
+            android:textSize="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/const_layout"
+
+            app:layout_constraintTop_toBottomOf="@id/fName"/>
+
+        <TextView
+            android:id="@+id/my_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/const_layout"
+            app:layout_constraintTop_toBottomOf="@id/lName"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Johnson"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintStart_toEndOf="@id/fName"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/fName"-->
+<!--            android:layout_marginStart="10dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Joshua"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintStart_toEndOf="@id/lName"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/lName"-->
+<!--            android:layout_marginStart="10dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="23"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintStart_toEndOf="@id/my_age"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/my_age"-->
+<!--            android:layout_marginStart="10dp"/>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
